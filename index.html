@@ -29,8 +29,12 @@
   /* ── NAV ── */
   nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,10,0.95);border-bottom:1px solid var(--dark3);display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:68px;backdrop-filter:blur(8px);transition:all .3s}
   nav.scrolled{border-bottom-color:var(--gold);background:rgba(10,10,10,0.99)}
-  .nav-logo{font-size:22px;font-weight:800;letter-spacing:4px;color:var(--white);text-decoration:none}
-  .nav-logo span{color:var(--gold)}
+  .nav-logo{font-size:22px;
+    font-weight:800;
+    letter-spacing:1px;
+    color:var(--gold);
+    text-decoration:none}
+  .nav-logo span{font-size:18px;color:var(--white)}
   .nav-links{display:flex;gap:32px;list-style:none}
   .nav-links a{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gray2);text-decoration:none;transition:color .2s}
   .nav-links a:hover{color:var(--gold)}
@@ -57,10 +61,30 @@
     background-size: cover;
     background-repeat: no-repeat;}
   .hero-bg-lines{position:absolute;inset:0;pointer-events:none;opacity:0.04}
-  .hero-eyebrow{font-size:11px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;animation:fadeUp .6s ease both}
-  .hero-title{font-size:clamp(40px,7vw,80px);font-weight:800;line-height:1.05;margin-bottom:24px;animation:fadeUp .6s .1s ease both}
-  .hero-title em{color:var(--gold);font-style:normal;display:block}
-  .hero-sub{font-size:clamp(14px,2vw,17px);color:var(--gray2);line-height:1.7;max-width:480px;margin-bottom:36px;animation:fadeUp .6s .2s ease both}
+  .hero-eyebrow{font-size:11px;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:16px;
+    animation:fadeUp .6s ease both;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);}
+  .hero-title{font-size:clamp(40px,7vw,80px);
+    font-weight:800;
+    line-height:1.05;
+    margin-bottom:24px;
+    animation:fadeUp .6s .1s ease both;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);}
+  .hero-title em{color:var(--gold);
+    font-style:normal;
+    display:block;
+    text-shadow: 1px 1px 4px rgb(112, 64, 1);}
+  .hero-sub{font-size:clamp(14px,2vw,17px);
+    color:var(--white);
+    line-height:1.7;
+    max-width:480px;
+    margin-bottom:36px;
+    animation:fadeUp .6s .2s ease both;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);}
   .hero-btns{display:flex;gap:14px;flex-wrap:wrap;animation:fadeUp .6s .3s ease both}
   .btn-primary{background:var(--gold);color:var(--black);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:14px 30px;border:none;border-radius:2px;cursor:pointer;text-decoration:none;transition:background .2s,transform .1s;display:inline-block}
   .btn-primary:hover{background:var(--gold-dark);transform:translateY(-1px)}
@@ -180,7 +204,7 @@
 
 <!-- NAV -->
 <nav id="navbar">
-  <a href="#home" class="nav-logo">AP <span>MOTO</span></a>
+  <a href="#home" class="nav-logo">AP <span>MOTO OFICINA</span></a>
   <ul class="nav-links">
     <li><a href="#servicos">Serviços</a></li>
     <li><a href="#galeria">Galeria</a></li>
@@ -211,7 +235,7 @@
     <rect width="100%" height="100%" fill="url(#grid)"/>
   </svg>
 
-  <div class="hero-eyebrow">Oficina especializada em motos — SC</div>
+  <div class="hero-eyebrow">Oficina especializada em motos</div>
   <h1 class="hero-title">
     Sua moto nas mãos<br>de <em>verdadeiros</em> mecânicos.
   </h1>
